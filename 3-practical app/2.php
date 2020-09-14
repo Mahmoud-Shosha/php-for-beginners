@@ -1,18 +1,19 @@
 <?php include "functions.php" ?>
 <?php include "includes/header.php" ?>
 
-	<section class="content">
+<section class="content">
 
-		<aside class="col-xs-4">
+	<aside class="col-xs-4">
 
-	<?php Navigation();?>
-			
-			
-		</aside><!--SIDEBAR-->
+		<?php Navigation(); ?>
 
 
-		<article class="main-content col-xs-8">
-		
+	</aside>
+	<!--SIDEBAR-->
+
+
+	<article class="main-content col-xs-8">
+
 
 
 		<?php
@@ -23,21 +24,31 @@
 
 
 		  Step3: Make 2 Arrays with the same values, one regular and the other associative
-
-		  Step4: Make a constant and set it to the value of PHP. and use an echo to print it out
-
-
 			
+		*/
 
-			 */
+		$number1 = 10;
+		$number2 = 20;
 
-		
+		echo $number1 + $number2 . "<br>";
+
+		$normal_array = ["Sami", 22];
+		$associative_array = ["name" => "Sami", "age" => 22];
+		print_r($normal_array);
+		echo "<br>";
+		print_r($associative_array);
+		echo "<br>";
+
+
+
+
 
 
 		?>
 
-	
 
-		</article><!--MAIN CONTENT-->
 
-<?php include "includes/footer.php" ?>
+	</article>
+	<!--MAIN CONTENT-->
+
+	<?php include "includes/footer.php" ?>
